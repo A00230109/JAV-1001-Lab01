@@ -1,0 +1,39 @@
+Code Review Lab01  
+
+This program takes name and grade from user and convert this grade to a letter grade, respecting the grading scheme for Cambrian College. 
+
+We don’t allow user to type a grade less than 0 or more than 100. 
+
+To encourage the student, we show him how much is away from the next level, 
+
+and we can put some fancy stuff to push him to do better. 
+
+In my opinion instead of writing to a student "The student is not doing well" if the grade < 50 I would prefer writing his name and encouraging 
+
+him that he can do well next time like "More effort to make, Yes you can!!"
+
+Example: If the grade given is 79.9 the letter grade will be B and the student is just 0.1 away from the next level which in this case is A. 
+
+I used a method that takes the input’s username and grade and return the letter grade, 
+
+we have only to print this method because it returns what we need as result. 
+
+Since the input of the student’s grade is not very precise, we can use float instead of double because float takes only four bytes 
+
+when double takes eight bytes, we don’t need all these bytes to input a student grade. 
+
+I noticed that Java manages bad the String.Format, Instead I prefer using System.out.printf() 
+
+Here the if statement is more precise than the switch statement, it is not easy to use switch with the operators > and < in Java. 
+
+It was not required but we can stop user from typing a string instead of a float as a grade by handling the exceptions, 
+
+that’s what the real-world needs, and we must never trust the user input. 
+
+One interesting thing if we want to go further with this program, we can get all students marks for a particular class for example, 
+
+in this case we can declare an array with dimension as number of students and get the average, the maximum, the minimum and grade letter for each student.  
+
+ 
+
+ 
